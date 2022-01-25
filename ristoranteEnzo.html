@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ristorante da Enzo</title>
+  </head>
+  <body>
+    <div
+      style="
+        border: 3px solid;
+        margin: 10px;
+        padding: 10px;
+        background-color: aqua;
+        max-width: 500px;
+      "
+    >
+      <h1>Ristorante da Enzo</h1>
+      <p>
+        Dal lunedì al martedì <br />
+        Dalle 11 alle 15 <br />
+        10$ al pasto
+      </p>
+      <div
+        style="
+          border: 3px solid;
+          max-width: 90%;
+          position: relative;
+          margin: px;
+          padding: 10px;
+        "
+      >
+        Informazioni ordine
+        <br />
+        <br />
+        <label for="mettiIlNome"><strong>Nome</strong></label
+        ><br />
+        <input type="text" id="mettiIlNome" />
+        <br />
+        <br />
+        <input type="radio" name="scelta" value="0" id="primaScelta" />
+        <label for="primaScelta">Da portare via</label><br />
+        <input
+          type="radio"
+          name="scelta"
+          value="1"
+          id="secondaScelta"
+          checked
+        />
+        <label for="secondaScelta">Mangio allo stadium</label>
+      </div>
+      <br />
+      <div
+        style="
+          border: 3px solid;
+          max-width: 90%;
+          position: relative;
+          margin: px;
+          padding: 10px;
+        "
+      >
+        <h2>Piatti</h2>
+        <h3>Lunedì</h3>
+        <input type="radio" name="lun" value="0" id="primoLun" />
+        <label for="primoLun">Pane con la minchia</label><br />
+        <input type="radio" name="lun" value="1" id="secondoLun" />
+        <label for="secondoLun">Tagliatelle del cazzo</label>
+        <h3>Martedì</h3>
+        <input type="radio" name="mar" value="0" id="primoMar" />
+        <label for="primoMar">Uova allo sticcio</label><br />
+        <input type="radio" name="mar" value="1" id="secondoMar" />
+        <label for="secondoMar">Carne di cavalla</label>
+        <hr style="border: 1px solid; background-color: black" />
+        <br />
+        <input type="checkbox" id="cic" />
+        <label for="cic">Senza glutine del cazzo (10$ superciu)</label>
+      </div>
+
+      <br />
+
+      <div
+        style="
+          border: 3px solid;
+          max-width: 90%;
+          position: relative;
+          margin: px;
+          padding: 10px;
+        "
+      >
+        <h3>Contorno schifoso</h3>
+        <input type="radio" name="contorno" value="0" id="cont1" />
+        <label for="cont1">Patate alla ricchiona</label><br />
+        <input type="radio" name="contorno" value="1" id="cont2" />
+        <laber for="cont2">Cappelle di salsiccia</laber>
+      </div>
+      <br />
+      <div
+        style="
+          border: 3px solid;
+          max-width: 90%;
+          position: relative;
+          margin: px;
+          padding: 10px;
+        "
+      >
+        <h2>Drinks</h2>
+        <select id="ben" name="ben">
+          <optgroup label="bevande">
+            <option value="0">Cocaina</option>
+            <option value="1">Fantasborra</option>
+            <option value="2">Spritscorreggia</option>
+            <option value="3">Tonica</option>
+          </optgroup>
+          <optgroup label="birre">
+            <option value="0">Peroni</option>
+            <option value="1">Sborretti</option>
+            <option value="2">Minchia</option>
+            <option value="3">Nastro</option>
+          </optgroup>
+        </select>
+        <hr style="border: 1px solid; background-color: black" />
+        <input type="checkbox" id="large" />
+        <label for="large">Vuoi un formato più grosso? 30$ superciu</label>
+      </div>
+      <br />
+      <input type="submit" value="Piazza ordine" />
+    </div>
+  </body>
+</html>
